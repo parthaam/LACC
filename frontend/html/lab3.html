@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<head>
+	<link rel="stylesheet" type="text/css" href="lab3.css">
+	<title> My Page </title>
+	<script type="text/javascript">
+		function submit() {
+			alert("This is a test");
+		}
+	</script>
+	<style>
+	body {
+		background-color:#FFFACD;
+	}
+	h1 {
+		text-align:center;
+		color:#8B0000;
+	}
+	</style>
+</head>
+<html>
+	<body>
+		<div id="wrapper">
+			<h1>Home Page for Partha's CS 351 class</h1>
+			<div class="nav">
+				<li><a href="about.html">About</a></li>
+				<li><a href="lab1.html">Lab 1</a></li>
+				<li><a href="lab2.html">Lab 2</a></li>
+			</div>
+			<br><br>
+			<div class="links">
+				<a href="https://blackboard.usc.edu" target="_blank">Blackboard</a><br><br>
+				<a href="https://my.usc.edu" target="_blank">My USC</a><br><br>
+				<a href="http://www.yahoo.com" target="_blank">Yahoo!</a><br>
+			</div>
+			<div class="content">
+				Please fill in the following form in order to register for the website. <br><br>
+				<form>
+					<div class="textBox">
+						<span style="float:left">Username:</span> <br><input type="text" name="firstname"><br><br>
+						<span style="float:left">Password: </span> <br> <input type="password" name="pwd"><br>
+					</div>
+					<div class="checkbox">
+						<span style="float:left">Courses Taken: </span> <br>
+						<div style="float:left">
+							<span style="float:left"><input style="margin:5px; floa" type="checkbox" name="course" value="CS101">CS101</span><br>
+							<span style="float:left"><input style="margin:5px" type="checkbox" name="course" value="CS102">CS201</span><br>
+							<span style="float:left"><input style="margin:5px" type="checkbox" name="course" value="CS351">CS351</span><br>
+							<span style="float:left"><input style="margin:5px" type="checkbox" name="course" value="CS402">CS402</span><br>
+						</div>
+					</div> 
+					<div class="radio">
+						<span>Type of Computer: </span> <br>
+						<div style="float:left">
+							<input type="radio" name="os" value="Windows">Windows<br>
+							<span style="position:relative; left:-16px;"><input type="radio" name="os" value="Mac">Mac</span><br>
+						</div>
+					</div>
+					<div class="dropdown">
+						<span> Class: </span>
+						<select onchange="submit()">
+							<option value="freshman">Freshman</option>
+							<option value="sophomore">Sophomore</option>
+							<option value="junior">Junior</option>
+							<option value="senior">Senior</option>
+						</select>
+					</div>
+					<div style="float:left">
+						<input type="submit" value="Submit" onsubmit="submit()">
+					</div>
+				</form>
+			</div>
+			<div class="pictures">
+				<br>
+				<img border="0" src="./../images/usc.jpg" alt="USC" height=50px width=50px>
+				<img border="0" src="./../images/html.jpg" alt="html" height=50px width=50px>
+				<img border="0" src="./../images/iphone.png" alt="iphone" height=50px width=50px>
+			</div>
+		</div>
+	</body>
+</html>
+
+
